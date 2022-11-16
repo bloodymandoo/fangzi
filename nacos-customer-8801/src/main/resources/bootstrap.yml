@@ -1,0 +1,15 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: nacos-customer
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+
+provider:
+  service:
+    url: http://nacos-provider
